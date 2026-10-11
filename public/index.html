@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#101314" />
+    <title>BUNKER 42 — место для тебя?</title>
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Bunker 42 — главная"
+        ><span class="brand-mark">42</span>BUNKER<span class="brand-suffix">
+          / ONLINE</span
+        ></a
+      ><span id="connection" class="connection">СОЦИАЛЬНАЯ ИГРА</span>
+    </header>
+    <div
+      id="connection-note"
+      class="connection-note"
+      role="status"
+      aria-live="polite"
+      hidden
+    ></div>
+    <div id="toast" role="status" aria-live="polite" hidden></div>
+    <main id="app"></main>
+    <footer>СОБСТВЕННЫЙ НАБОР КАРТ · 4–16 ИГРОКОВ · ВЕБ-MVP 0.1</footer>
+    <dialog id="rules">
+      <div class="dialog-top">
+        <h2>Протокол выживания</h2>
+        <button id="close-rules" class="ghost">Закрыть</button>
+      </div>
+      <p>
+        Вы получаете шесть характеристик и одну спецкарту. Закрытые карты
+        доступны только вам.
+      </p>
+      <ol>
+        <li>
+          Мест в убежище — половина от стартового состава с округлением вниз.
+        </li>
+        <li>
+          Раунд 1: каждый открывает профессию. Раунды 2–5: по одной закрытой
+          характеристике на выбор.
+        </li>
+        <li>
+          После раскрытия — обсуждение. Голосования назначаются по числу
+          участников. Один цикл исключает одного игрока.
+        </li>
+        <li>
+          Нельзя голосовать за себя. Но если не проголосовать за 60 секунд,
+          система засчитает голос против вас. Выбор можно менять до дедлайна.
+        </li>
+        <li>
+          При ничьей сервер случайно выбирает одного из лидеров. Спецкарты
+          работают только в разрешённые окна.
+        </li>
+        <li>
+          Попасть в бункер — личная победа. Судьба команды зависит от трёх
+          публичных условий катастрофы.
+        </li>
+      </ol>
+      <p>
+        Общайтесь лично или в голосовом чате. Встроенной аудиосвязи здесь нет.
+        Обновление страницы не сбрасывает таймер.
+      </p>
+    </dialog>
+  </body>
+</html>

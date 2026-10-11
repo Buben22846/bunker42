@@ -1,0 +1,10 @@
+services:
+  bunker42:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - bunker42_data:/app/data
+    restart: unless-stopped
+volumes:
+  bunker42_data:
